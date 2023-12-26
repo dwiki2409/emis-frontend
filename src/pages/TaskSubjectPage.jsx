@@ -26,7 +26,7 @@ const TaskSubjectPage = () => {
         setLoading(true)
 
         // Fetch all subject names
-        const subjectNamesRes = await fetch('/v1/api/subjects/types', {
+        const subjectNamesRes = await fetch('https://emis-backend-two.vercel.app/v1/api/subjects/types', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ const TaskSubjectPage = () => {
         setSubjectNames(subjectNamesData)
 
         // Fetch tasks for the selected subject
-        const tasksRes = await fetch(`/v1/api/tasks/${subjectId}`, {
+        const tasksRes = await fetch(`https://emis-backend-two.vercel.app/v1/api/tasks/${subjectId}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

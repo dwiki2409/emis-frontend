@@ -87,7 +87,7 @@ export default function NotificationsModal({ setShowModal, task, setDate }) {
 
   async function pushSubscriptionToServer(sub, reminderTime) {
     await axios.post(
-      '/v1/api/tasks/subscribe',
+      'https://emis-backend-two.vercel.app/v1/api/tasks/subscribe',
       {
         subscription: JSON.stringify(sub),
         reminderTime,

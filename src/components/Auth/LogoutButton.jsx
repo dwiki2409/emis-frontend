@@ -12,7 +12,7 @@ const LogoutButton = () => {
 
   const handleLogout = async () => {
     try {
-      const res = await fetch('/v1/api/users/logout', {
+      const res = await fetch('https://emis-backend-two.vercel.app/v1/api/users/logout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

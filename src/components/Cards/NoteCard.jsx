@@ -27,7 +27,7 @@ export default function NoteCard({ note, setNotes }) {
       if (!window.confirm('Are you sure you want to delete this note?')) return
 
       setLoading(true)
-      const response = await fetch(`/v1/api/notes/${subjectId}/${note._id}`, {
+      const response = await fetch(`https://emis-backend-two.vercel.app/v1/api/notes/${subjectId}/${note._id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

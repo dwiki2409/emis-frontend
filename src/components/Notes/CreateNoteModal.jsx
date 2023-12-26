@@ -53,7 +53,7 @@ function CreateNoteModal({ subjectId, subjectNames, setNotes }) {
     try {
       setLoading(true)
 
-      const response = await fetch(`/v1/api/notes/${subjectId}/create`, {
+      const response = await fetch(`https://emis-backend-two.vercel.app/v1/api/notes/${subjectId}/create`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -30,7 +30,7 @@ const DetailTaskPage = () => {
       setTask({})
       try {
         setLoading(true)
-        const res = await fetch(`/v1/api/tasks/${subjectId}/${taskId}`, {
+        const res = await fetch(`https://emis-backend-two.vercel.app/v1/api/tasks/${subjectId}/${taskId}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const DetailTaskPage = () => {
     try {
       setLoadingStatus(true)
       const response = await fetch(
-        `/v1/api/tasks/${subjectId}/${taskId}/status`,
+        `https://emis-backend-two.vercel.app/v1/api/tasks/${subjectId}/${taskId}/status`,
         {
           method: 'PATCH', // Gunakan metode PATCH untuk mengubah status
           headers: {

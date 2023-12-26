@@ -32,7 +32,7 @@ export default function BoardCard({ subject }) {
         return
 
       setLoading(true)
-      const response = await fetch(`/v1/api/subjects/${subjectId}`, {
+      const response = await fetch(`https://emis-backend-two.vercel.app/v1/api/subjects/${subjectId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

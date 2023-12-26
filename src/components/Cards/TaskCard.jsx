@@ -29,7 +29,7 @@ export default function TaskCard({ task, setTasks }) {
       if (!window.confirm('Are you sure you want to delete this task?')) return
 
       setLoading(true)
-      const response = await fetch(`/v1/api/tasks/${subjectId}/${task._id}`, {
+      const response = await fetch(`https://emis-backend-two.vercel.app/v1/api/tasks/${subjectId}/${task._id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

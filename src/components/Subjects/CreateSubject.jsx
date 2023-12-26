@@ -63,7 +63,7 @@ function CreateSubjectModal({ setSubjects }) {
   const createSubject = async () => {
     try {
       setLoading(true)
-      const response = await fetch('/v1/api/subjects/create', {
+      const response = await fetch('https://emis-backend-two.vercel.app/v1/api/subjects/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

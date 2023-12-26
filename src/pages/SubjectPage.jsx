@@ -17,7 +17,7 @@ const SubjectPage = () => {
       setSubjects([])
       try {
         setLoading(true)
-        const res = await fetch(`/v1/api/subjects/list`)
+        const res = await fetch(`https://emis-backend-two.vercel.app/v1/api/subjects/list`)
         const data = await res.json()
 
         setSubjects(data)
