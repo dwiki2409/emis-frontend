@@ -1,4 +1,6 @@
-import { defineConfig } from 'vite'
+import {
+  defineConfig
+} from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
@@ -9,7 +11,7 @@ export default defineConfig({
     // Get rid of the CORS error
     proxy: {
       '/v1': {
-        target: 'http://localhost:3000',
+        target: 'https://emis-backend-two.vercel.app',
         changeOrigin: true,
         secure: false,
       },
