@@ -33,8 +33,9 @@ const DetailTaskPage = () => {
         const res = await fetch(`https://emis-backend-two.vercel.app/v1/api/tasks/${subjectId}/${taskId}`, {
           method: 'GET',
           headers: {
-            'Content-Type': 'application/json',
-          },
+          'Content-Type': 'application/json',
+        },
+credentials: "include",
         })
 
         if (!res.ok) {
@@ -68,8 +69,9 @@ const DetailTaskPage = () => {
         {
           method: 'PATCH', // Gunakan metode PATCH untuk mengubah status
           headers: {
-            'Content-Type': 'application/json',
-          },
+          'Content-Type': 'application/json',
+        },
+credentials: "include",
           // Body berisi data yang ingin diubah, dalam hal ini completed menjadi true
           body: JSON.stringify({
             completed: true,

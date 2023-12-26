@@ -24,8 +24,9 @@ const DetailNotePage = () => {
           // Change the URL
           method: 'GET',
           headers: {
-            'Content-Type': 'application/json',
-          },
+          'Content-Type': 'application/json',
+        },
+credentials: "include",
         })
 
         if (!res.ok) {

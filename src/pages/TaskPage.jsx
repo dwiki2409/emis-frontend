@@ -31,8 +31,9 @@ const TasksPage = () => {
         const SubjectsRes = await fetch('https://emis-backend-two.vercel.app/v1/api/subjects/list', {
           method: 'GET',
           headers: {
-            'Content-Type': 'application/json',
-          },
+          'Content-Type': 'application/json',
+        },
+credentials: "include",
         })
         const SubjectsData = await SubjectsRes.json()
         setSubjects(SubjectsData)
