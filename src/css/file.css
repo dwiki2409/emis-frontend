@@ -1,0 +1,33 @@
+.judul {
+  color: aqua;
+}
+
+.tombol-biru {
+  height: 25px;
+  width: 50px;
+  background-color: blue;
+  width: fit-content;
+}
+
+.grup-area {
+  height: 200px;
+  width: 500px;
+}
+
+.grup {
+  text-align: center;
+}
+
+.output-card {
+  width: 100px;
+  height: 100px;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
