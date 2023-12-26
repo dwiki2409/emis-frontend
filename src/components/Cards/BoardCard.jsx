@@ -37,6 +37,7 @@ export default function BoardCard({ subject }) {
         headers: {
           'Content-Type': 'application/json',
         },
+credentials: "include",
       })
 
       if (!response.ok) {

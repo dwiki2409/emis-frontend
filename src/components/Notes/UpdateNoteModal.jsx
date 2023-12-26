@@ -64,6 +64,7 @@ function UpdateNoteModal({ note, subjectId }) {
         headers: {
           'Content-Type': 'application/json',
         },
+credentials: "include",
         body: JSON.stringify({
           title: titleNote,
           content: editorRef.current.getContent(),

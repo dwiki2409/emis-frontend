@@ -68,6 +68,7 @@ function CreateSubjectModal({ setSubjects }) {
         headers: {
           'Content-Type': 'application/json',
         },
+credentials: "include",
         body: JSON.stringify({
           name: titleSubject,
           dosen: dosenSubject,

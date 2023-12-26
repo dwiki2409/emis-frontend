@@ -66,6 +66,7 @@ function UpdateTaskModal({ task, subjectId }) {
         headers: {
           'Content-Type': 'application/json',
         },
+credentials: "include",
         body: JSON.stringify({
           title: titleTask,
           description: editorRef.current.getContent(),

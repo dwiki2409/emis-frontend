@@ -34,6 +34,7 @@ export default function TaskCard({ task, setTasks }) {
         headers: {
           'Content-Type': 'application/json',
         },
+credentials: "include",
       })
 
       if (!response.ok) {

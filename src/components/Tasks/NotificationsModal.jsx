@@ -99,6 +99,7 @@ export default function NotificationsModal({ setShowModal, task, setDate }) {
         headers: {
           'Content-Type': 'application/json',
         },
+credentials: "include",
       }
     )
   }

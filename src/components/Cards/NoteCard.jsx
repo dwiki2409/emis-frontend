@@ -32,6 +32,7 @@ export default function NoteCard({ note, setNotes }) {
         headers: {
           'Content-Type': 'application/json',
         },
+credentials: "include",
       })
 
       if (!response.ok) {
